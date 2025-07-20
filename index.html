@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,50 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+
+/* Responsive improvements */
+.w3-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header adjustments */
+header.w3-container {
+    padding: 96px 16px !important;
+}
+
+/* Mobile font sizes */
+@media (max-width: 600px) {
+    h1.w3-jumbo {
+        font-size: 48px !important;
+        line-height: 1.2;
+    }
+    .w3-padding-64 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+    .w3-content {
+        flex-direction: column;
+    }
+    .w3-twothird, .w3-third {
+        width: 100% !important;
+    }
+    .w3-third.w3-center {
+        margin-top: 32px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 601px) and (max-width: 992px) {
+    h1.w3-jumbo {
+        font-size: 64px !important;
+    }
+}
+
+/* Prevent layout shift for images */
+img {
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -24,22 +69,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ethereum Faucets</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dogecoin Faucets</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Litecoin Faucets</a>
-    
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="quotesrotate.html" class="w3-bar-item w3-button w3-padding-large">Bitcoin Faucets</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Ethereum Faucets</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Dogecoin Faucets</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Litecoin Faucets</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+<header class="w3-container w3-red w3-center">
   <h1 class="w3-margin w3-jumbo">Earn free cryptocurrencies</h1>
-  <img src="images/crypto.png" alt="">
+  <img src="images/crypto.png" alt="Cryptocurrency illustration" style="max-width: 80%; margin: 0 auto;">
 </header>
 
 <!-- First Grid -->
@@ -51,7 +95,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
       <p class="w3-text-grey">Here you can receive instant cryptocurrency payments from thousands of websites and withdraw to your personal wallet for a very low fee.</p>
       <p class="w3-text-grey">Make your faucetpay account by clicking the image below </p>
-      <a href="https://faucetpay.io/?r=4247471" target="_blank" rel="noopener noreferrer"><img src="faucetpay.gif" alt=""></a>
+      <a href="https://faucetpay.io/?r=4247471" target="_blank" rel="noopener noreferrer">
+        <img src="faucetpay.gif" alt="FaucetPay signup" style="max-width: 300px;">
+      </a>
     </div>
 
     <div class="w3-third w3-center">
