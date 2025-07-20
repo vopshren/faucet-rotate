@@ -9,14 +9,24 @@ body {font-family: Verdana, sans-serif; margin:0}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #f1f1f1;
+  max-width: 1000px; /* Added max-width */
+  margin: 0 auto; /* Center the slideshow */
 }
 
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 20px; /* Reduced padding */
   text-align: center;
+}
+
+/* Make images responsive */
+.mySlides img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Next & previous buttons */
@@ -36,7 +46,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 /* Position the "next button" to the right */
 .next {
-  position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -45,12 +54,13 @@ body {font-family: Verdana, sans-serif; margin:0}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
+  
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background: #ddd;
 }
 
@@ -71,54 +81,112 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: #717171;
 }
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;
+/* Author styling */
+.author {
+  color: cornflowerblue;
   text-align: center;
+  margin: 10px 0;
+}
+
+/* Button styling */
+.mySlides button {
+  padding: 10px 20px;
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .mySlides {
+    padding: 15px;
+  }
+  
+  .prev, .next {
+    padding: 12px;
+    font-size: 18px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mySlides {
+    padding: 10px;
+  }
+  
+  .prev, .next {
+    padding: 8px;
+    font-size: 16px;
+    }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  .mySlides button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
 </style>
 </head>
 <body>
 
-  <h1 style="text-align: center;"> High Paying Earning Sites </h1>
-  <h2 style="text-align: center;">Click on the image below to visit the faucet</h2>
+<h1 style="text-align: center;">High Paying Earning Sites</h1>
+<h2 style="text-align: center;">Click on the image below to visit the faucet</h2>
 
 <div class="slideshow-container">
 
 <div class="mySlides">
-  <a href="https://faucetoshi.com/?r=72314" target="_blank"><img src="images/faucetoshi.jpg" alt="" srcset=""></a>
+  <a href="https://faucetoshi.com/?r=72314" target="_blank"><img src="images/faucetoshi.jpg" alt="Faucetoshi"></a>
   <p class="author">faucetoshi</p>
   <a href="https://faucetoshi.com/?r=72314" target="_blank"><button>Join Now</button></a>
 </div>
 
 <div class="mySlides">
-  <a href="https://tap-coin.de/refer/user/5059" target="_blank"><img src="images/tapcoin.jpg" alt="" srcset=""></a>
+  <a href="https://tap-coin.de/refer/user/5059" target="_blank"><img src="images/tapcoin.jpg" alt="Tap Coin"></a>
   <p class="author">tap-coin</p>
+  <a href="https://tap-coin.de/refer/user/5059" target="_blank"><button>Join Now</button></a>
 </div>
 
 <div class="mySlides">
-  <a href="https://aruble.net/?r=pHfJdUbYMg" target="_blank"><img src="images/acrypto.jpg" alt="" srcset=""></a>
-  <p class="author">Aruble.net</p> 
+  <a href="https://aruble.net/?r=pHfJdUbYMg" target="_blank"><img src="images/acrypto.jpg" alt="Aruble.net"></a>
+  <p class="author">Aruble.net</p>
+  <a href="https://aruble.net/?r=pHfJdUbYMg" target="_blank"><button>Join Now</button></a>
 </div>
 
 <div class="mySlides">
-  <a href="https://viefaucet.com?r=62d6c1f2f6ee210e7603b60d" target="_blank"><img src="images/viafaucet.jpg" alt="" srcset=""></a>
-  <p class="author">Viafaucet</p> 
+  <a href="https://viefaucet.com?r=62d6c1f2f6ee210e7603b60d" target="_blank"><img src="images/viafaucet.jpg" alt="Viafaucet"></a>
+  <p class="author">Viafaucet</p>
+  <a href="https://viefaucet.com?r=62d6c1f2f6ee210e7603b60d" target="_blank"><button>Join Now</button></a>
 </div>
 
 <div class="mySlides">
-  <a href="https://dogepool.xyz/?r=142042" target="_blank"><img src="images/dogepool.png" alt="" srcset=""></a>
-  <p class="author">Dogepool</p> 
+  <a href="https://dogepool.xyz/?r=142042" target="_blank"><img src="images/dogepool.png" alt="Dogepool"></a>
+  <p class="author">Dogepool</p>
+  <a href="https://dogepool.xyz/?r=142042" target="_blank"><button>Join Now</button></a>
 </div>
 
 <div class="mySlides">
-  <a href="https://earn-pepe.com/?ref=YpZe" target="_blank"><img src="images/earn pepe.jpg" alt="" srcset=""></a>
-  <p class="author">Earn pepe</p> 
+  <a href="https://earn-pepe.com/?ref=YpZe" target="_blank"><img src="images/earn pepe.jpg" alt="Earn Pepe"></a>
+  <p class="author">Earn pepe</p>
+  <a href="https://earn-pepe.com/?ref=YpZe" target="_blank"><button>Join Now</button></a>
 </div>
-<a class="prev" onclick="plusSlides(-1)">Previous Site</a>
-<a class="next" onclick="plusSlides(1)">Next Site</a>
+
+<a class="prev" onclick="plusSlides(-1)"><<</a>
+<a class="next" onclick="plusSlides(1)">>></a>
 
 </div>
 
@@ -160,7 +228,5 @@ function showSlides(n) {
 }
 </script>
 
-
-
 </body>
-</html> 
+</html>
